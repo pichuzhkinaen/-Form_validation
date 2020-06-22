@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form class="form">
+        <div class="login">
+            <input id="login" type="text" class="form_input" placeholder="Логин" required autofocus autocomplete="on" minlength="4" maxlength="12" pattern="^[a-zA-Z][a-zA-Z0-9_-]{4,12}$">
+            <div class="form_popup login_popup"></div>
+        </div>
+
+        <div class="password">
+            <input id="password" type="password" class="form_input" placeholder="Пароль" required autocomplete="on" minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+            <a href="#" class="password_control"></a>
+            <div class="form_popup password_popup"></div>
+        </div>
+
+        <div class="email">
+            <input id="email" type="email" class="form_input" placeholder="e-mail" required autocomplete="on">
+            <div class="form_popup email_popup"></div>
+        </div>
+
+        <input id="phone" type="tel" class="form_input" placeholder="Телефон" required autocomplete="on">
+        <button class="form_submit">Отправить</button>
+    </form>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

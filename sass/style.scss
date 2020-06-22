@@ -1,0 +1,76 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    background: #f1f4f5;
+    border: 1px solid #bac0c2;
+    &_input {
+        width: 250px;
+        height: 30px;
+        margin: 5px auto;
+        outline: none;
+        border: 1px solid #95999b;
+        border-radius: 5px;
+        &_invalid {
+            border: 1px solid #DD5145; 
+        }
+    }
+    &_popup {
+        display: none;
+        z-index: 5;
+        width: 300px;
+        min-height: 30px;
+        font-size: 14px;
+        background: #DD5145;
+        color: #FFFFFF;
+        border-radius: 5px;
+        padding: 7px;
+        box-shadow: 0 0 5px rgb(70, 69, 69);
+        &:before {
+            content: '';
+            position: absolute;
+            border: 12px solid transparent;
+            border-bottom: 12px solid #DD5145;
+            left: 15%;
+            top: -22px;
+        }
+    }
+    .login {
+        margin: 0 auto;
+        &_popup {
+            position: absolute;
+        }
+    }
+    .password {
+        margin: 0 auto;
+        position: relative;
+        .password_control {
+            position: absolute;
+            top: 11px;
+            right: 6px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(/icon/eye.svg) 0 0 no-repeat;
+            &_view {
+                background: url(/icon/no_eye.svg) 0 0 no-repeat;
+            }
+        }
+        &_popup {
+            position: absolute;
+        } 
+    }
+    .email {
+        margin: 0 auto;
+        &_popup {
+            position: absolute;
+        }  
+    }
+    &_submit {
+        width: 100px;
+        height: 30px;
+        margin: 5px auto;
+    }
+}

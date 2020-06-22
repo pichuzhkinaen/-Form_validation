@@ -1,0 +1,98 @@
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  height: 300px;
+  background: #f1f4f5;
+  border: 1px solid #bac0c2;
+}
+
+.form_input {
+  width: 250px;
+  height: 30px;
+  margin: 5px auto;
+  outline: none;
+  border: 1px solid #95999b;
+  border-radius: 5px;
+}
+
+.form_input_invalid {
+  border: 1px solid #DD5145;
+}
+
+.form_popup {
+  display: none;
+  z-index: 5;
+  width: 300px;
+  min-height: 30px;
+  font-size: 14px;
+  background: #DD5145;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 7px;
+  -webkit-box-shadow: 0 0 5px #464545;
+          box-shadow: 0 0 5px #464545;
+}
+
+.form_popup:before {
+  content: '';
+  position: absolute;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #DD5145;
+  left: 15%;
+  top: -22px;
+}
+
+.form .login {
+  margin: 0 auto;
+}
+
+.form .login_popup {
+  position: absolute;
+}
+
+.form .password {
+  margin: 0 auto;
+  position: relative;
+}
+
+.form .password .password_control {
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(/icon/eye.svg) 0 0 no-repeat;
+}
+
+.form .password .password_control_view {
+  background: url(/icon/no_eye.svg) 0 0 no-repeat;
+}
+
+.form .password_popup {
+  position: absolute;
+}
+
+.form .email {
+  margin: 0 auto;
+}
+
+.form .email_popup {
+  position: absolute;
+}
+
+.form_submit {
+  width: 100px;
+  height: 30px;
+  margin: 5px auto;
+}
+/*# sourceMappingURL=style.css.map */
