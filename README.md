@@ -1,1 +1,6 @@
-"# -Form_validation" 
+![form](https://github.com/pichuzhkinaen/Form_validation/blob/master/form1.jpg)
+![form](https://github.com/pichuzhkinaen/Form_validation/blob/master/form2.jpg)
+![form](https://github.com/pichuzhkinaen/Form_validation/blob/master/form3.jpg)
+![form](https://github.com/pichuzhkinaen/Form_validation/blob/master/form4.jpg)
+![form](https://github.com/pichuzhkinaen/Form_validation/blob/master/form5.jpg)
+![form](https://github.com/pichuzhkinaen/Form_validation/blob/master/form6.jpg)
